@@ -1,0 +1,14 @@
+{
+  "schema_version": 1,
+  "kind": "results",
+  "source": {"name": "synthetic-demo", "license_reference": "synthetic test data", "captured_at": "2026-10-31T12:00:00+09:00"},
+  "races": [{
+    "race_id": "DEMO-20261031-99-01", "status": "official",
+    "results": [
+      {"car_no": 1, "rider_id": "DEMO-R001", "rank": 1, "finish_status": "finished", "agari_seconds": 11.3, "winning_method": "逃げ", "margin": null},
+      {"car_no": 2, "rider_id": "DEMO-R002", "rank": 2, "finish_status": "finished", "agari_seconds": 11.5, "winning_method": null, "margin": "1車身"},
+      {"car_no": 3, "rider_id": "DEMO-R003", "rank": 3, "finish_status": "finished", "agari_seconds": 11.6, "winning_method": null, "margin": "1/2車身"}
+    ],
+    "payouts": [{"bet_type": "3rentan", "combination": "1-2-3", "payout_yen": 3210}]
+  }]
+}

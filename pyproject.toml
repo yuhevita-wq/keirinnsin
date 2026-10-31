@@ -1,0 +1,16 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "keirin-shin"
+version = "0.1.0"
+description = "競輪レースの事前スナップショット・確定結果を選手単位で蓄積"
+requires-python = ">=3.10"
+dependencies = []
+
+[project.scripts]
+keirin-shin = "keirin_shin.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["keirin_shin*"]

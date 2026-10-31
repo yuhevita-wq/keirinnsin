@@ -1,0 +1,11 @@
+{
+  "rights_confirmed": false,
+  "token_env": "KEIRIN_FEED_TOKEN",
+  "token_header": "Authorization",
+  "token_prefix": "Bearer ",
+  "urls": {
+    "schedule": "https://your-authorized-provider.example/api/schedule/{date}",
+    "pre_race": "https://your-authorized-provider.example/api/pre/{date_compact}",
+    "results": "https://your-authorized-provider.example/api/results/{date}"
+  }
+}

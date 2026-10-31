@@ -1,0 +1,7 @@
+{
+  "schema_version": 1,
+  "kind": "schedule",
+  "source": {"name": "synthetic-demo", "license_reference": "synthetic test data", "captured_at": "2026-10-30T20:00:00+09:00"},
+  "race_date": "2026-10-31",
+  "races": [{"race_id": "DEMO-20261031-99-01", "venue_code": "99", "race_no": 1}]
+}

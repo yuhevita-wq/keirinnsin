@@ -180,3 +180,21 @@
 ---
 
 **このREADMEは調査結果とプロジェクトの目標を記録する文書です。確認済みの事実、提供元の主張、今後の仮説・実装計画を区別し、検証結果に応じて更新します。**
+
+
+---
+
+## 実装：レース前情報と選手別確定結果のデータ収集基盤 v0.1
+
+`keirin_shin/` にSQLiteでデータを蓄積するPythonの取込基盤を実装しました。発走前の選手情報スナップショット、確定結果、払戻、収集時刻、提供元情報を保存し、重複排除・整合性チェック・収集漏れ検知・選手単位CSV出力ができます。
+
+```bash
+python -m unittest discover -s tests -v
+python -m keirin_shin --db data/demo.sqlite3 ingest-dir examples
+python -m keirin_shin --db data/demo.sqlite3 report --date 2026-10-31
+python -m keirin_shin --db data/demo.sqlite3 export-riders --out data/demo_riders.csv
+```
+
+**現状：実際の競輪データ収集先は未契約・未接続。** `examples/` はすべて架空のテストデータです。許諾を得た提供元の接続までは全レースの実データ収集は開始されません。日次取得は `scripts/daily_sync.py` に対応しますが、配信元契約・フォーマット変換・永続的な実行環境の設定が必要です。
+
+詳しくは [docs/DATA_PIPELINE.md](docs/DATA_PIPELINE.md) を参照してください。

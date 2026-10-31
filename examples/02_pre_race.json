@@ -1,0 +1,14 @@
+{
+  "schema_version": 1,
+  "kind": "pre_race",
+  "source": {"name": "synthetic-demo", "license_reference": "synthetic test data", "captured_at": "2026-10-31T09:00:00+09:00"},
+  "races": [{
+    "race_id": "DEMO-20261031-99-01", "race_date": "2026-10-31", "venue_code": "99",
+    "venue_name": "架空競輪場（サンプル）", "race_no": 1, "scheduled_start": "2026-10-31T11:00:00+09:00", "race_class": "A級（架空）",
+    "entries": [
+      {"car_no": 1, "rider_id": "DEMO-R001", "rider_name": "架空選手・甲", "race_score": 90.2, "rider_class": "A1", "running_style": "逃", "line_group": "A", "line_position": 1, "features": {"back_count": 7}},
+      {"car_no": 2, "rider_id": "DEMO-R002", "rider_name": "架空選手・乙", "race_score": 86.7, "rider_class": "A2", "running_style": "追", "line_group": "A", "line_position": 2, "features": {"back_count": 0}},
+      {"car_no": 3, "rider_id": "DEMO-R003", "rider_name": "架空選手・丙", "race_score": 89.1, "rider_class": "A1", "running_style": "両", "line_group": "B", "line_position": 1, "features": {"back_count": 3}}
+    ]
+  }]
+}
